@@ -334,20 +334,15 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       <p>In presentation order. Open the available links to review each candidate.</p>
     </div>
 
-    <div class="batch-switcher" id="batch-switcher" data-count="2">
-      <button class="batch-btn" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
+    <div class="batch-switcher" id="batch-switcher" data-count="1">
+      <button class="batch-btn active" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
         <span>Batch 1</span>
-        <span class="batch-count">3</span>
-        <span class="batch-date">August 31, 2026</span>
-      </button>
-      <button class="batch-btn active" onclick="showBatch(2)" data-batch="2" data-batch-date="August 31, 2026">
-        <span>Batch 2</span>
-        <span class="batch-count">3</span>
+        <span class="batch-count">6</span>
         <span class="batch-date">August 31, 2026</span>
       </button>
     </div>
 
-    <div id="batch-1" class="batch-panel hidden" data-batch-date="August 31, 2026">
+    <div id="batch-1" class="batch-panel" data-batch-date="August 31, 2026">
       <div class="candidates">
         
     <div class="candidate-card fade-in visible">
@@ -713,53 +708,18 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
 
       </div>
     </div>
-      </div>
-      <div class="fade-in visible">
-        
-  <div class="comparison-section">
-    <div class="section-label" style="padding-bottom:20px;">
-      <h2>Side-by-Side Comparison</h2>
-      <p>Key criteria at a glance to help you prioritize interviews.</p>
-    </div>
-    <div class="comparison-table-wrap">
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Criteria</th>
-            <th>Arnaud</th><th>Adelaida</th><th>Danilo</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td><strong>Location</strong></td><td>Mexico</td><td>Philippines</td><td>Philippines</td></tr>
-          <tr><td><strong>Experience</strong></td><td>13 yrs Finance &amp; Accounting</td><td>25 yrs Accounting &amp; Finance</td><td>11 yrs Accounting</td></tr>
-          <tr><td><strong>Industries</strong></td><td>Property Management, Hospitality / Vacation Rentals, Energy / Subsea Engineering</td><td>Media/Advertising Technology, Professional Services / Staffing (International Contractor Model), Public Accounting / CPA Firm</td><td>Shared Services / Global Accounting &amp; Outsourcing, Financial Services / Holding Group, Business Process Outsourcing / CRM Services</td></tr>
-          <tr><td><strong>Core Strength</strong></td><td>Multi-Entity Close, US GAAP &amp; IFRS, Hands-On Preparer Work</td><td>AP/AR &amp; Payroll Operations, NetSuite, Audit &amp; Internal Controls</td><td>AP / AR Hands-On Execution, Month-End Close, NetSuite / ERP Migration</td></tr>
-          <tr><td><strong>HRIS / Tools</strong></td><td>US GAAP, IFRS, Multi-Entity Consolidation, SAP, SAP BPC</td><td>NetSuite, QuickBooks Online/Desktop, Bill.com, Paylocity, Rippling</td><td>NetSuite, SAP R3, SAP Business One, QuickBooks Online, Xero</td></tr>
-          <tr><td><strong>Languages</strong></td><td>English, Spanish, French</td><td><span class="cell-empty">—</span></td><td><span class="cell-empty">—</span></td></tr>
-          <tr><td><strong>Education</strong></td><td>Certified Public Accountant - French Diploma (DSCG) (Excelia); Master's Degree in Management (Major: Corporate Finance) (Excelia)</td><td>Master of Science in Business Management (Pampanga Agricultural State University – Philippines); Bachelor of Science in Accountancy (Holy Angel University – Philippines)</td><td>PhD in Management (on Leave) (Saint Louis College – San Fernando, La Union); Master of Science in Accounting (Saint Louis University – Baguio City, Benguet)</td></tr>
-          <tr><td><strong>Rate</strong></td><td class="highlight-cell">$4,500/mo</td><td>$5,000/mo</td><td class="highlight-cell">$4,500/mo</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-      </div>
-    </div>
-
-    <div id="batch-2" class="batch-panel" data-batch-date="August 31, 2026">
-      <div class="candidates">
 
         <div class="candidate-card fade-in visible">
           <div class="card featured" id="candidate-b2-0">
             <div class="card-top">
               <div class="card-identity">
-                <div class="card-avatar featured-avatar">01</div>
+                <div class="card-avatar featured-avatar">04</div>
                 <div>
                   <div class="card-name">Maricris</div>
                   <div class="card-location">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                     Philippines · 25+ yrs Accounting &amp; Finance
                   </div>
-                  <div class="card-badges"><span class="badge badge-shortlisted">9.5 / 10 role fit</span></div>
                 </div>
               </div>
               <div class="score-box">
@@ -809,8 +769,8 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
           <div class="card" id="candidate-b2-1">
             <div class="card-top">
               <div class="card-identity">
-                <div class="card-avatar">02</div>
-                <div><div class="card-name">Victor</div><div class="card-location"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mexico · 15 yrs Accounting &amp; Finance</div><div class="card-badges"><span class="badge badge-shortlisted">8.4 / 10 role fit</span><span class="badge badge-shortlisted">Availability confirmed</span></div></div>
+                <div class="card-avatar">05</div>
+                <div><div class="card-name">Victor</div><div class="card-location"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mexico · 15 yrs Accounting &amp; Finance</div><div class="card-badges"><span class="badge badge-shortlisted">Availability confirmed</span></div></div>
               </div>
               <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$4,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">15 yrs Accounting &amp; Finance</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
             </div>
@@ -838,7 +798,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         <div class="candidate-card fade-in visible">
           <div class="card" id="candidate-b2-2">
             <div class="card-top">
-              <div class="card-identity"><div class="card-avatar">03</div><div><div class="card-name">Isidro</div><div class="card-location"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mexico · 20+ yrs Finance Leadership</div><div class="card-badges"><span class="badge badge-shortlisted">8.2 / 10 role fit</span></div></div></div>
+              <div class="card-identity"><div class="card-avatar">06</div><div><div class="card-name">Isidro</div><div class="card-location"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mexico · 20+ yrs Finance Leadership</div></div></div>
               <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$3,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">20+ yrs Finance Leadership</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
             </div>
             <div class="card-body">
@@ -867,18 +827,16 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         <div class="comparison-section">
           <div class="section-label" style="padding-bottom:20px;"><h2>Side-by-Side Comparison</h2><p>Key criteria at a glance to help you prioritize interviews.</p></div>
           <div class="comparison-table-wrap"><table class="comparison-table">
-            <thead><tr><th>Criteria</th><th>Maricris</th><th>Victor</th><th>Isidro</th></tr></thead>
+            <thead><tr><th>Criteria</th><th>Arnaud</th><th>Adelaida</th><th>Danilo</th><th>Maricris</th><th>Victor</th><th>Isidro</th></tr></thead>
             <tbody>
-              <tr><td><strong>Role fit</strong></td><td class="highlight-cell">9.5 / 10</td><td>8.4 / 10</td><td>8.2 / 10</td></tr>
-              <tr><td><strong>Location</strong></td><td>Philippines</td><td>Mexico</td><td>Mexico</td></tr>
-              <tr><td><strong>Experience</strong></td><td>25+ yrs Accounting &amp; Finance</td><td>15 yrs Accounting &amp; Finance</td><td>20+ yrs Finance Leadership</td></tr>
-              <tr><td><strong>Industries</strong></td><td>SaaS, Telecommunications, US Accounting Services, Manufacturing</td><td>Technology Platform, Electronics Manufacturing, Big Four Audit</td><td>Technology, Engineering, Medical Devices, Real Estate, Logistics</td></tr>
-              <tr><td><strong>Core Strength</strong></td><td>Technical Accounting, Controller Ownership, Multi-Entity Close</td><td>Revenue Accounting, Audit Rigor, SOX Controls</td><td>US Company Leadership, Controls, Cross-Functional Finance</td></tr>
-              <tr><td><strong>Tools</strong></td><td>QuickBooks, SAP, Microsoft Dynamics</td><td>NetSuite, FloQast, Blackline, SAP, Oracle</td><td>Oracle NetSuite</td></tr>
-              <tr><td><strong>Credential</strong></td><td>US CPA, Philippines CPA, CGMA</td><td>Accounting Degree</td><td>Public Accounting Degree</td></tr>
-              <tr><td><strong>Availability</strong></td><td>Pending confirmation</td><td class="highlight-cell">Confirmed</td><td>Pending confirmation</td></tr>
-              <tr><td><strong>Primary gap</strong></td><td>No verified NetSuite experience</td><td>No CPA; limited healthcare exposure</td><td>Seniority and hands-on scope alignment</td></tr>
-              <tr><td><strong>Rate</strong></td><td class="highlight-cell">$3,500/mo</td><td>$4,000/mo</td><td class="highlight-cell">$3,000/mo</td></tr>
+              <tr><td><strong>Location</strong></td><td>Mexico</td><td>Philippines</td><td>Philippines</td><td>Philippines</td><td>Mexico</td><td>Mexico</td></tr>
+              <tr><td><strong>Experience</strong></td><td>13 yrs Finance &amp; Accounting</td><td>25 yrs Accounting &amp; Finance</td><td>11 yrs Accounting</td><td>25+ yrs Accounting &amp; Finance</td><td>15 yrs Accounting &amp; Finance</td><td>20+ yrs Finance Leadership</td></tr>
+              <tr><td><strong>Industries</strong></td><td>Property Management, Hospitality, Energy</td><td>Advertising Technology, Professional Services, Public Accounting</td><td>Shared Services, Financial Services, BPO</td><td>SaaS, Telecommunications, US Accounting Services, Manufacturing</td><td>Technology Platform, Electronics Manufacturing, Big Four Audit</td><td>Technology, Engineering, Medical Devices, Real Estate, Logistics</td></tr>
+              <tr><td><strong>Core Strength</strong></td><td>Multi-Entity Close, US GAAP &amp; IFRS, Hands-On Preparer Work</td><td>AP/AR, Payroll Operations, Audit &amp; Internal Controls</td><td>AP/AR Execution, Month-End Close, ERP Migration</td><td>Technical Accounting, Controller Ownership, Multi-Entity Close</td><td>Revenue Accounting, Audit Rigor, SOX Controls</td><td>US Company Leadership, Controls, Cross-Functional Finance</td></tr>
+              <tr><td><strong>Tools</strong></td><td>SAP, SAP BPC, QuickBooks</td><td>NetSuite, QuickBooks, Bill.com, Paylocity, Rippling</td><td>NetSuite, SAP, QuickBooks, Xero</td><td>QuickBooks, SAP, Microsoft Dynamics</td><td>NetSuite, FloQast, Blackline, SAP, Oracle</td><td>Oracle NetSuite</td></tr>
+              <tr><td><strong>Credential</strong></td><td>French CPA Diploma</td><td>Accounting Degree</td><td>Philippines CPA</td><td>US CPA, Philippines CPA, CGMA</td><td>Accounting Degree</td><td>Public Accounting Degree</td></tr>
+              <tr><td><strong>Availability</strong></td><td>Pending confirmation</td><td>Pending confirmation</td><td>Pending confirmation</td><td>Pending confirmation</td><td class="highlight-cell">Confirmed</td><td>Pending confirmation</td></tr>
+              <tr><td><strong>Rate</strong></td><td>$4,500/mo</td><td>$5,000/mo</td><td>$4,500/mo</td><td>$3,500/mo</td><td>$4,000/mo</td><td>$3,000/mo</td></tr>
             </tbody>
           </table></div>
         </div>
