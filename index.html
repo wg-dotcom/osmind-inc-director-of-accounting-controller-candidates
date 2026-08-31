@@ -307,7 +307,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         </div>
         <div class="hero-meta-item">
           <span class="hero-meta-label">Monthly range</span>
-          <span class="hero-meta-value">$5,000/mo</span>
+          <span class="hero-meta-value">$3,000–$5,000/mo</span>
         </div>
         <div class="hero-meta-item">
           <span class="hero-meta-label">Work model</span>
@@ -315,7 +315,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         </div>
         <div class="hero-meta-item">
           <span class="hero-meta-label">Profiles</span>
-          <span class="hero-meta-value">03</span>
+          <span class="hero-meta-value">06</span>
         </div>
       </div>
     </div>
@@ -334,15 +334,20 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       <p>In presentation order. Open the available links to review each candidate.</p>
     </div>
 
-    <div class="batch-switcher" id="batch-switcher" data-count="1">
-      <button class="batch-btn active" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
+    <div class="batch-switcher" id="batch-switcher" data-count="2">
+      <button class="batch-btn" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
         <span>Batch 1</span>
+        <span class="batch-count">3</span>
+        <span class="batch-date">August 31, 2026</span>
+      </button>
+      <button class="batch-btn active" onclick="showBatch(2)" data-batch="2" data-batch-date="August 31, 2026">
+        <span>Batch 2</span>
         <span class="batch-count">3</span>
         <span class="batch-date">August 31, 2026</span>
       </button>
     </div>
 
-    <div id="batch-1" class="batch-panel" data-batch-date="August 31, 2026">
+    <div id="batch-1" class="batch-panel hidden" data-batch-date="August 31, 2026">
       <div class="candidates">
         
     <div class="candidate-card fade-in visible">
@@ -737,6 +742,145 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       </table>
     </div>
   </div>
+      </div>
+    </div>
+
+    <div id="batch-2" class="batch-panel" data-batch-date="August 31, 2026">
+      <div class="candidates">
+
+        <div class="candidate-card fade-in visible">
+          <div class="card featured" id="candidate-b2-0">
+            <div class="card-top">
+              <div class="card-identity">
+                <div class="card-avatar featured-avatar">01</div>
+                <div>
+                  <div class="card-name">Maricris</div>
+                  <div class="card-location">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    Philippines · 25+ yrs Accounting &amp; Finance
+                  </div>
+                  <div class="card-badges"><span class="badge badge-shortlisted">9.5 / 10 role fit</span></div>
+                </div>
+              </div>
+              <div class="score-box">
+                <div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$3,500/mo</span></div>
+                <div class="score-cell"><span class="score-label">Experience</span><span class="score-value">25+ yrs Accounting &amp; Finance</span></div>
+                <div class="score-cell"><span class="score-label">Location</span><span class="score-value">Philippines</span></div>
+                <div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-narrative">Maricris is the strongest profile in this search. She is a US and Philippines CPA who spent ten years as Controller for a US SaaS and telecommunications company. She owned close, reporting, controls, audits, team leadership, and ASC 606 and ASC 842 decisions. She has worked inside US companies, not only through outsourced accounting. The only real gap is NetSuite, but her accounting judgment and direct Controller depth are difficult to beat.</div>
+
+              <div class="card-section-title">Experience Highlights</div>
+              <div class="experience-list">
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Accounting Manager</div><div class="exp-company">US Accounting Services</div><div class="exp-period">Aug 2025 – Present</div><ul class="exp-highlight-list"><li>Leads monthly close, reporting, reconciliations, and client accounting for US businesses.</li><li>Reviews team output and strengthens accounting controls and documentation.</li></ul></div></div>
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Controller</div><div class="exp-company">US Real Estate &amp; Construction</div><div class="exp-period">Aug 2024 – Aug 2025</div><ul class="exp-highlight-list"><li>Owned financial reporting, cash management, close, and operating controls.</li><li>Worked directly with US leadership in a hands-on Controller seat.</li></ul></div></div>
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Controller</div><div class="exp-company">US Telecommunications &amp; SaaS</div><div class="exp-period">May 2010 – Apr 2020</div><ul class="exp-highlight-list"><li>Led accounting for ten years, including ASC 606 revenue and ASC 842 lease decisions.</li><li>Owned audits, close, reporting, controls, and accounting team leadership.</li></ul></div></div>
+              </div>
+
+              <div class="card-section-title">Core strengths</div>
+              <div class="tags-cluster"><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">ASC 606</span><span class="ctag ctag-key">ASC 842</span><span class="ctag ctag-key">Multi-Entity Close</span><span class="ctag ctag-key">Internal Controls</span><span class="ctag">QuickBooks</span><span class="ctag">SAP</span><span class="ctag">Microsoft Dynamics</span><span class="ctag">Intercompany</span><span class="ctag">Audit Management</span><span class="ctag">Budgeting &amp; Forecasting</span><span class="ctag">Team Leadership</span></div>
+
+              <div class="card-section-title">Relevant evidence</div>
+              <div class="fit-grid">
+                <div class="fit-item"><div class="fit-label">Ten years as Controller for a US SaaS company → Direct ownership of the accounting decisions Osmind needs</div></div>
+                <div class="fit-item"><div class="fit-label">Hands-on ASC 606 and ASC 842 work → Strong technical foundation for SaaS and RCM revenue</div></div>
+                <div class="fit-item"><div class="fit-label">US CPA, Philippines CPA, and CGMA → Credential risk is effectively removed</div></div>
+              </div>
+
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Maricris</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" style="width:100%;height:100%;display:block;background:#000;" src="https://candidate-video.com/uploads/545df648-4647-4e8e-b4ed-032d93105c1f">Your browser does not support inline video.</video></div></section>
+              <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body">
+                <p class="cv-summary">US and Philippines CPA and CGMA with deep Controller experience across SaaS, telecommunications, manufacturing, construction, and US accounting services. Brings hands-on ownership of close, reporting, controls, audits, technical accounting, and team leadership.</p>
+                <div class="cv-sub">Experience</div>
+                <div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Accounting Manager</span><span class="cv-dates">Aug 2025 – Present</span></div><div class="cv-company">US Accounting Services</div><ul class="cv-bullets"><li>Leads monthly close, financial reporting, reconciliations, and client accounting.</li><li>Reviews team output and improves controls, documentation, and delivery quality.</li></ul></div>
+                <div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Controller</span><span class="cv-dates">Aug 2024 – Aug 2025</span></div><div class="cv-company">US Real Estate &amp; Construction</div><ul class="cv-bullets"><li>Owned close, reporting, cash management, budgeting, and operating controls.</li><li>Worked directly with US leadership as a hands-on accounting owner.</li></ul></div>
+                <div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Controller</span><span class="cv-dates">May 2010 – Apr 2020</span></div><div class="cv-company">US Telecommunications &amp; SaaS</div><ul class="cv-bullets"><li>Owned monthly and annual close, financial reporting, audits, and accounting operations.</li><li>Applied ASC 606 revenue recognition and ASC 842 lease accounting.</li><li>Led accounting teams and strengthened internal controls.</li></ul></div>
+                <div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Accounting Manager</span><span class="cv-dates">Earlier experience</span></div><div class="cv-company">US Manufacturing</div><ul class="cv-bullets"><li>Consolidated four subsidiaries and completed intercompany eliminations.</li><li>Managed close, reporting, and accounting process improvements.</li></ul></div>
+                <div class="cv-sub">Education</div><div class="cv-edu"><strong>MBA, Accounting &amp; Business Management</strong> · Far Eastern University · 2022</div><div class="cv-edu"><strong>BS Accountancy</strong> · University of the Philippines Visayas · 1994</div>
+                <div class="cv-sub">Skills</div><div class="cv-tags"><span class="ctag">US GAAP</span><span class="ctag">ASC 606</span><span class="ctag">ASC 842</span><span class="ctag">QuickBooks</span><span class="ctag">SAP</span><span class="ctag">Microsoft Dynamics</span><span class="ctag">Multi-Entity Close</span><span class="ctag">Intercompany</span><span class="ctag">Internal Controls</span><span class="ctag">Audit Management</span></div>
+                <div class="cv-sub">Certifications</div><div class="cv-tags"><span class="ctag">CPA – United States</span><span class="ctag">CPA – Philippines</span><span class="ctag">CGMA</span></div>
+              </div></details>
+            </div>
+          </div>
+        </div>
+
+        <div class="candidate-card fade-in visible">
+          <div class="card" id="candidate-b2-1">
+            <div class="card-top">
+              <div class="card-identity">
+                <div class="card-avatar">02</div>
+                <div><div class="card-name">Victor</div><div class="card-location"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mexico · 15 yrs Accounting &amp; Finance</div><div class="card-badges"><span class="badge badge-shortlisted">8.4 / 10 role fit</span></div></div>
+              </div>
+              <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$4,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">15 yrs Accounting &amp; Finance</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+            </div>
+            <div class="card-body">
+              <div class="card-narrative">Victor brings a rare mix of Big Four rigor and direct operating experience. He spent eight years at PwC, then moved into revenue accounting at DoorDash and now works as an Assistant Controller. He already understands US GAAP, SOX, NetSuite, close reviews, reconciliations, and audit pressure. The main trade-off is credentialing: he has an Accounting degree but is not a CPA. He also needs to prove he can build a lean function without a large corporate support structure.</div>
+              <div class="card-section-title">Experience Highlights</div>
+              <div class="experience-list">
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Assistant Controller</div><div class="exp-company">Electronics Manufacturing</div><div class="exp-period">Feb 2025 – Present</div><ul class="exp-highlight-list"><li>Reviews close, reconciliations, reporting, and accounting controls.</li><li>Supports Controller-level decisions and audit readiness.</li></ul></div></div>
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Revenue Accounting Manager</div><div class="exp-company">US Technology Platform</div><div class="exp-period">Jun 2022 – Aug 2024</div><ul class="exp-highlight-list"><li>Managed revenue accounting inside a US public-company environment.</li><li>Worked across NetSuite, SOX controls, reconciliations, and close systems.</li></ul></div></div>
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Senior Financial Auditor</div><div class="exp-company">Big Four Public Accounting</div><div class="exp-period">Mar 2010 – Mar 2018</div><ul class="exp-highlight-list"><li>Spent eight years testing financial statements, controls, and accounting judgments.</li><li>Built strong audit discipline across complex organizations.</li></ul></div></div>
+              </div>
+              <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">SOX</span><span class="ctag ctag-key">NetSuite</span><span class="ctag ctag-key">Revenue Accounting</span><span class="ctag">SAP</span><span class="ctag">Oracle</span><span class="ctag">FloQast</span><span class="ctag">Blackline</span><span class="ctag">Internal Controls</span><span class="ctag">Audit</span><span class="ctag">Reconciliations</span></div>
+              <div class="card-section-title">Relevant evidence</div><div class="fit-grid"><div class="fit-item"><div class="fit-label">Eight years at PwC plus current Assistant Controller ownership → Strong judgment, audit discipline, and close controls</div></div><div class="fit-item"><div class="fit-label">Revenue Accounting Manager at a US technology platform → Direct experience with revenue, systems, and SOX</div></div><div class="fit-item"><div class="fit-label">NetSuite, FloQast, Blackline, and automation tools → Ready for a more controlled close and systems transition</div></div></div>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Victor</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" style="width:100%;height:100%;display:block;background:#000;" src="https://candidate-video.com/uploads/e6cd0f8c-62ce-478c-8ff2-832b980b0c4e">Your browser does not support inline video.</video></div></section>
+              <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body">
+                <p class="cv-summary">Accounting leader with Big Four audit depth and direct US-company operating experience. Strong in revenue accounting, US GAAP, SOX, close controls, reconciliations, NetSuite, and finance systems.</p>
+                <div class="cv-sub">Experience</div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Assistant Controller</span><span class="cv-dates">Feb 2025 – Present</span></div><div class="cv-company">Electronics Manufacturing</div><ul class="cv-bullets"><li>Reviews close, reconciliations, reporting, and accounting controls.</li><li>Supports audit readiness and Controller-level accounting decisions.</li></ul></div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Revenue Accounting Manager</span><span class="cv-dates">Jun 2022 – Aug 2024</span></div><div class="cv-company">US Technology Platform</div><ul class="cv-bullets"><li>Managed revenue accounting, reconciliations, systems, and SOX controls.</li><li>Worked with NetSuite, FloQast, Blackline, Salesforce, and automation tools.</li></ul></div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Senior Financial Auditor</span><span class="cv-dates">Mar 2010 – Mar 2018</span></div><div class="cv-company">Big Four Public Accounting</div><ul class="cv-bullets"><li>Audited financial statements, internal controls, and accounting estimates.</li><li>Led audit work across complex operating environments.</li></ul></div>
+                <div class="cv-sub">Education</div><div class="cv-edu"><strong>Bachelor’s Degree in Accounting</strong> · Universidad Autónoma de Baja California · 2004–2008</div>
+                <div class="cv-sub">Skills</div><div class="cv-tags"><span class="ctag">US GAAP</span><span class="ctag">SOX</span><span class="ctag">NetSuite</span><span class="ctag">SAP</span><span class="ctag">Oracle</span><span class="ctag">FloQast</span><span class="ctag">Blackline</span><span class="ctag">Revenue Accounting</span><span class="ctag">Internal Controls</span><span class="ctag">Audit</span></div>
+              </div></details>
+            </div>
+          </div>
+        </div>
+
+        <div class="candidate-card fade-in visible">
+          <div class="card" id="candidate-b2-2">
+            <div class="card-top">
+              <div class="card-identity"><div class="card-avatar">03</div><div><div class="card-name">Isidro</div><div class="card-location"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Mexico · 20+ yrs Finance Leadership</div><div class="card-badges"><span class="badge badge-shortlisted">8.2 / 10 role fit</span></div></div></div>
+              <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$3,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">20+ yrs Finance Leadership</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+            </div>
+            <div class="card-body">
+              <div class="card-narrative">Isidro has spent decades running finance for North American companies in Mexico. He is currently the Accounting Manager for a US technology business and has held Controller roles in engineering, architecture, real estate, and logistics. He brings US GAAP, SOX, NetSuite, audit discipline, and leadership across accounting, tax, treasury, HR, and IT. The risk is fit, not capability: he is significantly more senior than the target and should explain why the $3,000 expectation and hands-on scope make sense.</div>
+              <div class="card-section-title">Experience Highlights</div>
+              <div class="experience-list">
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Accounting Manager</div><div class="exp-company">North American Technology</div><div class="exp-period">Oct 2021 – Present</div><ul class="exp-highlight-list"><li>Reports directly to US leadership and runs accounting in Oracle NetSuite.</li><li>Owns reporting, close, controls, tax, and treasury responsibilities.</li></ul></div></div>
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Controller</div><div class="exp-company">US Engineering</div><div class="exp-period">Jan 2020 – Jun 2021</div><ul class="exp-highlight-list"><li>Led finance and accounting for the Mexico operation of a US engineering company.</li><li>Managed reporting, controls, budgets, cash, and compliance.</li></ul></div></div>
+                <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Controller</div><div class="exp-company">US Real Estate &amp; Logistics Companies</div><div class="exp-period">1999 – 2006</div><ul class="exp-highlight-list"><li>Held Controller ownership across North American operating businesses.</li><li>Built broad experience across accounting, tax, treasury, HR, and systems.</li></ul></div></div>
+              </div>
+              <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">SOX</span><span class="ctag ctag-key">Oracle NetSuite</span><span class="ctag ctag-key">Internal Controls</span><span class="ctag">IFRS</span><span class="ctag">Financial Reporting</span><span class="ctag">Tax</span><span class="ctag">Treasury</span><span class="ctag">Team Leadership</span><span class="ctag">Medical Devices</span></div>
+              <div class="card-section-title">Relevant evidence</div><div class="fit-grid"><div class="fit-item"><div class="fit-label">Current Accounting Manager for a North American technology company → Direct US reporting and active NetSuite use</div></div><div class="fit-item"><div class="fit-label">Controller history across several US companies → Proven ownership beyond outsourced accounting</div></div><div class="fit-item"><div class="fit-label">Medical-device and dermatology experience → Useful exposure to regulated healthcare-adjacent operations</div></div></div>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Isidro</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" style="width:100%;height:100%;display:block;background:#000;" src="https://candidate-video.com/uploads/79a677a8-4bac-4089-9d52-490d6d015899">Your browser does not support inline video.</video></div></section>
+              <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body">
+                <p class="cv-summary">Senior finance leader with decades of Controller and Accounting Manager experience inside North American companies. Strong in US GAAP, SOX, NetSuite, controls, reporting, tax, treasury, and cross-functional leadership.</p>
+                <div class="cv-sub">Experience</div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Accounting Manager</span><span class="cv-dates">Oct 2021 – Present</span></div><div class="cv-company">North American Technology</div><ul class="cv-bullets"><li>Reports directly to US leadership and runs accounting through Oracle NetSuite.</li><li>Owns close, reporting, controls, tax, treasury, and audit support.</li></ul></div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Controller</span><span class="cv-dates">Jan 2020 – Jun 2021</span></div><div class="cv-company">US Engineering</div><ul class="cv-bullets"><li>Led accounting, reporting, budgets, cash, and compliance for the Mexico operation.</li><li>Partnered with US leadership on financial controls and business decisions.</li></ul></div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Finance &amp; Administration Manager</span><span class="cv-dates">Prior experience</span></div><div class="cv-company">Medical Devices</div><ul class="cv-bullets"><li>Managed finance and administration in a regulated healthcare-adjacent business.</li><li>Oversaw accounting, tax, treasury, reporting, and operating support.</li></ul></div><div class="cv-exp"><div class="cv-exp-head"><span class="cv-role">Controller</span><span class="cv-dates">1999 – 2006</span></div><div class="cv-company">US Real Estate &amp; Logistics Companies</div><ul class="cv-bullets"><li>Held Controller ownership across North American operating businesses.</li><li>Managed teams and broad finance, tax, treasury, HR, and systems responsibilities.</li></ul></div>
+                <div class="cv-sub">Education</div><div class="cv-edu"><strong>Degree in Public Accounting</strong> · Universidad Iberoamericana · 1987–1991</div>
+                <div class="cv-sub">Skills</div><div class="cv-tags"><span class="ctag">US GAAP</span><span class="ctag">IFRS</span><span class="ctag">SOX</span><span class="ctag">Oracle NetSuite</span><span class="ctag">Internal Controls</span><span class="ctag">Financial Reporting</span><span class="ctag">Tax</span><span class="ctag">Treasury</span><span class="ctag">Team Leadership</span></div>
+              </div></details>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in visible">
+        <div class="comparison-section">
+          <div class="section-label" style="padding-bottom:20px;"><h2>Side-by-Side Comparison</h2><p>Key criteria at a glance to help you prioritize interviews.</p></div>
+          <div class="comparison-table-wrap"><table class="comparison-table">
+            <thead><tr><th>Criteria</th><th>Maricris</th><th>Victor</th><th>Isidro</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Role fit</strong></td><td class="highlight-cell">9.5 / 10</td><td>8.4 / 10</td><td>8.2 / 10</td></tr>
+              <tr><td><strong>Location</strong></td><td>Philippines</td><td>Mexico</td><td>Mexico</td></tr>
+              <tr><td><strong>Experience</strong></td><td>25+ yrs Accounting &amp; Finance</td><td>15 yrs Accounting &amp; Finance</td><td>20+ yrs Finance Leadership</td></tr>
+              <tr><td><strong>Industries</strong></td><td>SaaS, Telecommunications, US Accounting Services, Manufacturing</td><td>Technology Platform, Electronics Manufacturing, Big Four Audit</td><td>Technology, Engineering, Medical Devices, Real Estate, Logistics</td></tr>
+              <tr><td><strong>Core Strength</strong></td><td>Technical Accounting, Controller Ownership, Multi-Entity Close</td><td>Revenue Accounting, Audit Rigor, SOX Controls</td><td>US Company Leadership, Controls, Cross-Functional Finance</td></tr>
+              <tr><td><strong>Tools</strong></td><td>QuickBooks, SAP, Microsoft Dynamics</td><td>NetSuite, FloQast, Blackline, SAP, Oracle</td><td>Oracle NetSuite</td></tr>
+              <tr><td><strong>Credential</strong></td><td>US CPA, Philippines CPA, CGMA</td><td>Accounting Degree</td><td>Public Accounting Degree</td></tr>
+              <tr><td><strong>Primary gap</strong></td><td>No verified NetSuite experience</td><td>No CPA; limited healthcare exposure</td><td>Seniority and hands-on scope alignment</td></tr>
+              <tr><td><strong>Rate</strong></td><td class="highlight-cell">$3,500/mo</td><td>$4,000/mo</td><td class="highlight-cell">$3,000/mo</td></tr>
+            </tbody>
+          </table></div>
+        </div>
       </div>
     </div>
   </section>
