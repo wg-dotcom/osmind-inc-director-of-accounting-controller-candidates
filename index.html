@@ -282,6 +282,9 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
 </style><style>
 .resume-details{overflow:hidden}.resume-details[open]{background:var(--paper,#fff)}.resume-details summary{cursor:pointer;list-style:none}.resume-details summary::-webkit-details-marker{display:none}.resume-details summary::after{content:'+';margin-left:10px;font:600 14px var(--font-meta)}.resume-details[open] summary::after{content:'\2212'}.resume-details .cv-body{display:grid;gap:0;padding:28px}.cv-summary{margin:0 0 28px;padding:18px 20px;background:var(--cream,#f5f2ed);border-left:3px solid var(--dandelion,#f5b800);border-radius:0 12px 12px 0;color:var(--ink,#122e30);font-size:14px;line-height:1.65}.cv-sub{display:flex;align-items:center;gap:12px;margin:30px 0 16px;color:var(--glacier,#093a3e);font:700 13px var(--font-heading);letter-spacing:.02em}.cv-sub::after{content:'';height:1px;flex:1;background:var(--line,#d8d4cc)}.cv-sub:first-of-type{margin-top:0}.cv-exp{padding:0 0 22px;margin:0 0 22px;border-bottom:1px solid var(--line,#d8d4cc)}.cv-exp:last-of-type{margin-bottom:0}.cv-exp-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}.cv-role{color:var(--ink,#122e30);font:700 15px/1.4 var(--font-heading)}.cv-dates{flex:0 0 auto;padding:4px 8px;border:1px solid var(--line,#d8d4cc);border-radius:999px;color:var(--muted,#657170);font:11px/1.2 var(--font-meta);white-space:nowrap}.cv-company{margin:4px 0 0;color:var(--muted,#657170);font-size:12px}.cv-bullets{display:grid;gap:8px;margin:14px 0 0;padding:0;list-style:none}.cv-bullets li{position:relative;padding-left:16px;color:var(--ink,#122e30);font-size:13px;line-height:1.55}.cv-bullets li::before{content:'';position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--dandelion,#f5b800)}.cv-edu{padding:14px 16px;margin-bottom:9px;background:var(--cream,#f5f2ed);border:1px solid var(--line,#d8d4cc);border-radius:12px;color:var(--ink,#122e30);font-size:13px;line-height:1.5}.cv-tags{display:flex;flex-wrap:wrap;gap:8px}.cv-line{padding:14px 16px;background:var(--cream,#f5f2ed);border-radius:12px;color:var(--ink,#122e30);font-size:13px;line-height:1.55}@media(max-width:560px){.resume-details .cv-body{margin:0 10px 10px;padding:18px}.cv-exp-head{display:grid;gap:6px}.cv-dates{width:max-content}.cv-summary{padding:15px 16px}}
 </style>
+<style>
+.candidate-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}.candidate-media-grid .candidate-video{max-width:none;margin:0}.recording-pending{display:flex;align-items:center;justify-content:center;min-height:100%;padding:28px;color:#fff;text-align:center;font:600 14px/1.5 var(--font-body)}.recording-pending a{color:var(--dandelion)}@media(max-width:760px){.candidate-media-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
@@ -294,12 +297,12 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
           <div class="logo-sep" aria-hidden="true"></div>
           <img class="client-logo" src="osmind-logo.svg" alt="Osmind" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'"><span class="client-wordmark client-wordmark-fallback">Osmind</span>
         </div>
-        <span class="logo-sub">Batch 1 · August 31, 2026</span>
+        <span class="logo-sub">Batches 1–2 · Updated September 10, 2026</span>
       </div>
       <div class="hero-eyebrow">Candidate shortlist</div>
       <h1><strong>Director of Accounting (Controller) candidates for Osmind Inc</strong></h1>
       <p class="hero-sub">Hey Shuchi and Megan, here's what I went looking for after our conversation: not resume Controllers, people who have built an accounting function with their own hands and still open the spreadsheets themselves
-. Six made the cut, from Mexico and the Philippines. Every one has run multi-entity close for US companies, and none of them is above the data entry and reconciliations while the function gets built.</p>
+. Nine made the cut across two batches, from Mexico, Belize, Costa Rica, and the Philippines. Each one brings direct experience with multi-entity close, US reporting, or finance-system transitions.</p>
       <div class="hero-meta">
         <div class="hero-meta-item">
           <span class="hero-meta-label">Schedule</span>
@@ -315,10 +318,11 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         </div>
         <div class="hero-meta-item">
           <span class="hero-meta-label">Profiles</span>
-          <span class="hero-meta-value">06</span>
+          <span class="hero-meta-value">09</span>
         </div>
       </div>
     </div>
+
   </section>
 
   <section class="editorial fade-in visible" aria-label="What matters for this role">
@@ -334,11 +338,16 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       <p>In presentation order. Open the available links to review each candidate.</p>
     </div>
 
-    <div class="batch-switcher" id="batch-switcher" data-count="1">
+    <div class="batch-switcher" id="batch-switcher" data-count="2">
       <button class="batch-btn active" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
         <span>Batch 1</span>
         <span class="batch-count">6</span>
         <span class="batch-date">August 31, 2026</span>
+      </button>
+      <button class="batch-btn" onclick="showBatch(2)" data-batch="2" data-batch-date="September 10, 2026">
+        <span>Batch 2</span>
+        <span class="batch-count">3</span>
+        <span class="batch-date">September 10, 2026</span>
       </button>
     </div>
 
@@ -841,6 +850,94 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         </div>
       </div>
     </div>
+
+    <div id="batch-2" class="batch-panel hidden" data-batch-date="September 10, 2026">
+      <div class="candidates">
+        <div class="candidate-card fade-in visible"><div class="card featured" id="candidate-batch2-danielle">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar featured-avatar">07</div><div><div class="card-name">Danielle</div><div class="card-location">Belize · 10+ yrs Accounting &amp; Finance</div><div class="card-badges"><span class="badge badge-shortlisted">Interview completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$4,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">10+ yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Belize</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Danielle is the clearest hands-on builder in this batch. At Belize Sustainable Agriculture Ltd., she owned full-cycle accounting across Belize, Guatemala, and the United States. She also initiated and led the move from QuickBooks Online to Microsoft Dynamics 365. She migrated the opening data, reconciled intercompany balances, tested the setup, and trained the team. Her recent Web3 work is outside accounting, but she wants to return to the field.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Financial Controller &amp; IT Manager</div><div class="exp-company">Belize Sustainable Agriculture Ltd.</div><div class="exp-period">Nov 2014 – Jun 2023</div><ul class="exp-highlight-list"><li>Owned AP, AR, payroll, general ledger, close, reporting, budgets, and audit preparation across three countries.</li><li>Led the complete QuickBooks Online to Microsoft Dynamics 365 migration.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Head of Support &amp; Community Operations / Game Designer</div><div class="exp-company">Pixels / Banger Inc.</div><div class="exp-period">Nov 2023 – Jun 2026</div></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Accountant</div><div class="exp-company">W Group Companies</div><div class="exp-period">Nov 2017 – Dec 2018</div></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">Full-Cycle Accounting</span><span class="ctag ctag-key">QuickBooks Online</span><span class="ctag ctag-key">Dynamics 365</span><span class="ctag ctag-key">Multi-Entity Close</span><span class="ctag">Intercompany</span><span class="ctag">Budgeting</span><span class="ctag">Audit Prep</span><span class="ctag">Advanced Excel</span></div>
+            <div class="card-section-title">Interview evidence</div><div class="fit-grid"><div class="fit-item"><div class="fit-label">Owned the close and consolidated reporting across a US holding company and operating entities in Belize and Guatemala.</div></div><div class="fit-item"><div class="fit-label">Started the Dynamics 365 project, coordinated vendors, migrated data, reconciled intercompany accounts, and trained the CFO.</div></div><div class="fit-item"><div class="fit-label">Has sole-accountant experience and can build the chart of accounts and records from the ground up.</div></div><div class="fit-item"><div class="fit-label"><strong>Main risk:</strong> Recent work is outside accounting. Belize is outside Osmind’s current Mexico payroll setup.</div></div></div>
+            <div class="candidate-media-grid">
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Danielle</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" src="https://candidate-video.com/uploads/b007639a-7aca-4610-8f8a-4354004489c0">Your browser does not support inline video.</video></div></section>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Interview with Danielle</span><span>September 10, 2026</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1inMNq8wM66mWS2bO_QosDZZpfojN1VLP/preview" title="Danielle interview recording" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section>
+            </div>
+            <div class="card-actions"><a class="video-intro-btn" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-9Mwmt52Dquus/069902b5-7086-4073-8a0f-bd2a3ca7d146-o1HtYPXJWqWCZCheIGB449X2t3lQ5UIsluBEI8QhHKEuQEXlOjELKNnSpVEY9V0EPzfEzWgBZYeltL1NAS61rorseOHBVnyvcgH/DQuan_Resume_Controller.pdf" target="_blank" rel="noopener">Open original CV (PDF)</a></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">Hands-on Controller with multi-country accounting ownership and direct experience replacing QuickBooks Online with Microsoft Dynamics 365.</p><div class="cv-sub">Experience</div><div class="cv-line"><strong>Belize Sustainable Agriculture Ltd.</strong> · Financial Controller &amp; IT Manager · Nov 2014–Jun 2023</div><div class="cv-line"><strong>Pixels / Banger Inc.</strong> · Head of Support &amp; Community Operations / Game Designer · Nov 2023–Jun 2026</div><div class="cv-line"><strong>W Group Companies</strong> · Accountant · Nov 2017–Dec 2018</div><div class="cv-line"><strong>Commodities Services &amp; Energy Ltd.</strong> · Bookkeeper · Aug–Dec 2017</div><div class="cv-sub">Education</div><div class="cv-edu"><strong>Associate Degree, Business Science</strong> · University of Belize · 2010–2012</div><div class="cv-edu"><strong>Associate Degree, Computer Science</strong> · University of Belize · 2009–2011</div></div></details>
+          </div>
+        </div></div>
+
+        <div class="candidate-card fade-in visible"><div class="card" id="candidate-batch2-steven">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar">08</div><div><div class="card-name">Steven</div><div class="card-location">Costa Rica · 15 yrs Accounting</div><div class="card-badges"><span class="badge badge-shortlisted">Interview completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$4,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">15 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Costa Rica</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Steven offers the strongest US GAAP and close-control depth in this batch. He manages six legal entities across the United States, the Americas, APAC, and EMEA. He owns the close calendar, reviews balance-sheet support, and documents judgment calls such as ASC 606 conclusions. Boston Scientific, 3M, and Citi give him a disciplined operating base. His main gap is platform migration: he has transferred accounting processes, but the interview did not prove full ownership of an ERP replacement.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Accounting Manager, US Client Portfolio</div><div class="exp-company">Independent Financial Services Consultant</div><div class="exp-period">2023 – Present</div><ul class="exp-highlight-list"><li>Runs full-cycle accounting, close, reporting, reconciliations, and startup accounting for US entities.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Corporate Accounting Manager</div><div class="exp-company">Boston Scientific</div><div class="exp-period">2019 – 2023</div><ul class="exp-highlight-list"><li>Led global close, US GAAP, statutory reporting, technical accounting, and audit support.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Senior Accountant</div><div class="exp-company">3M American Global Services Center</div><div class="exp-period">2017 – 2018</div><ul class="exp-highlight-list"><li>Transferred US record-to-report work from headquarters to Costa Rica.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Financial Analyst</div><div class="exp-company">Citi Services Center</div><div class="exp-period">2011 – 2016</div></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">QuickBooks Online</span><span class="ctag ctag-key">Multi-Entity Close</span><span class="ctag ctag-key">ASC 606</span><span class="ctag">SAP S/4HANA</span><span class="ctag">Oracle FCCS</span><span class="ctag">Bill.com</span><span class="ctag">Ramp</span></div>
+            <div class="card-section-title">Interview evidence</div><div class="fit-grid"><div class="fit-item"><div class="fit-label">Manages six legal entities and a close that ends by business day six or seven.</div></div><div class="fit-item"><div class="fit-label">Owns balance-sheet review and records the accounting basis for judgmental decisions.</div></div><div class="fit-item"><div class="fit-label">Hired and coached a senior accountant in APAC while reporting to a US Director.</div></div><div class="fit-item"><div class="fit-label"><strong>Main risk:</strong> Full accounting-platform replacement remains unproven.</div></div></div>
+            <div class="candidate-media-grid">
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Steven</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" src="https://candidate-video.com/uploads/cd965fb3-3cc0-4e06-84e7-c49bd78fee6f">Your browser does not support inline video.</video></div></section>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Interview with Steven</span><span>September 10, 2026</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1qeOYsBOc7FJL2C1feZEE2poCNDXeq7Jo/preview" title="Steven interview recording" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section>
+            </div>
+            <div class="card-actions"><a class="video-intro-btn" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-mRMUhrN3ySus/22e13c1c-defd-4d99-99ce-a87815897107-VKVhVhErCAoBxo5CHfLv5f4pKTmHNQnSvpZLwBvx7oLzfhuxFUJSbtu9gDEinAPLvqZGCSUtytGBgq8SlHzUcDezWyggdzleOEY/Steven-C_Remote.pdf" target="_blank" rel="noopener">Open original CV (PDF)</a></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">Accounting leader with US GAAP, multi-entity close, technical accounting, audit, and process-transition experience.</p><div class="cv-sub">Experience</div><div class="cv-line"><strong>Independent Financial Services Consultant</strong> · Accounting Manager, US Client Portfolio · 2023–Present</div><div class="cv-line"><strong>Boston Scientific</strong> · Corporate Accounting Manager · 2019–2023</div><div class="cv-line"><strong>3M American Global Services Center</strong> · Senior Accountant · 2017–2018</div><div class="cv-line"><strong>Citi Services Center</strong> · Financial Analyst · 2011–2016</div><div class="cv-sub">Education</div><div class="cv-edu"><strong>Bachelor’s Degree, Public Accounting</strong> · Universidad San Marcos · 2016</div><div class="cv-sub">Systems</div><div class="cv-tags"><span class="ctag">QuickBooks Online</span><span class="ctag">Sage</span><span class="ctag">SAP S/4HANA</span><span class="ctag">Oracle FCCS</span><span class="ctag">Hyperion HFM</span><span class="ctag">Bill.com</span><span class="ctag">Ramp</span></div></div></details>
+          </div>
+        </div></div>
+
+        <div class="candidate-card fade-in visible"><div class="card" id="candidate-batch2-rogelio">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar">09</div><div><div class="card-name">Rogelio</div><div class="card-location">Mexico City · 20+ yrs Finance Leadership</div><div class="card-badges"><span class="badge badge-shortlisted">Interview completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$5,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">20+ yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico City</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Rogelio is the most senior finance leader in this batch. His background includes MICRO1, Gunnebo, RMS Security, Micro Focus, SAS Institute, AMD, and EMC / Dell. He has managed regional books, FP&amp;A, controls, revenue recognition, treasury, and ERP work across Latin America. He also described periods when he was the only finance and accounting owner for Mexico and Argentina. The key question is level fit: Osmind needs a Controller who will stay close to daily accounting work.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Senior Finance Consultant</div><div class="exp-company">MICRO1</div><div class="exp-period">2025 – Present</div><ul class="exp-highlight-list"><li>Builds SaaS forecasts, financial models, KPI reporting, and cash-runway analysis.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Finance Director</div><div class="exp-company">Gunnebo</div><div class="exp-period">2024</div></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Director of Finance &amp; Administration</div><div class="exp-company">RMS Security</div><div class="exp-period">2021 – 2024</div><ul class="exp-highlight-list"><li>Implemented Intelisis ERP and dashboards. Cut AR days from 65 to 35.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Regional Controller, LATAM North</div><div class="exp-company">Micro Focus</div><div class="exp-period">2014 – 2021</div><ul class="exp-highlight-list"><li>Led reporting, revenue recognition, audits, SOX, forecasts, and close improvement.</li></ul></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">IFRS</span><span class="ctag ctag-key">SOX</span><span class="ctag ctag-key">Regional Controllership</span><span class="ctag">SAP</span><span class="ctag">Oracle</span><span class="ctag">Intelisis</span><span class="ctag">Odoo</span><span class="ctag">FP&amp;A</span></div>
+            <div class="card-section-title">Interview evidence</div><div class="fit-grid"><div class="fit-item"><div class="fit-label">Owned country and consolidated books across several markets in the Americas.</div></div><div class="fit-item"><div class="fit-label">Uses weekly reconciliations and close pre-alerts before formal P&amp;L and balance-sheet reporting.</div></div><div class="fit-item"><div class="fit-label">Has built teams and worked as the sole finance owner for smaller country operations.</div></div><div class="fit-item"><div class="fit-label"><strong>Main risk:</strong> May be too senior for the daily hands-on scope. QuickBooks execution needs deeper testing.</div></div></div>
+            <div class="candidate-media-grid">
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Rogelio</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" src="https://candidate-video.com/uploads/1b51ee38-2f63-4edf-b3ad-564223c8a1d1">Your browser does not support inline video.</video></div></section>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Interview with Rogelio</span><span>September 10, 2026</span></div><div class="candidate-video-frame"><div class="recording-pending">Google Meet is still processing this recording.<br><a href="https://docs.google.com/document/d/10uqOHKUpbIZoe5fjqvsjN13YfWLnY-dPlmkSHa89FZo/edit?usp=meet_tnfm_calendar" target="_blank" rel="noopener">Open the interview notes</a></div></div></section>
+            </div>
+            <div class="card-actions"><a class="video-intro-btn" href="https://prod-fillout-oregon-s3.s3.us-west-2.amazonaws.com/orgid-351357/flowpublicid-9Mwmt52Dquus/bf9aa6c7-8209-4d39-808e-2496ceeeffbf-OsKGc3xHrAxqdftelftihy9zuvMHvjsoKUNOI33WyjAmX6Mu9IX1pjwwLt1qpyrrkkwJgA24AxAQZCOzppA8Xc4gDoBFTwySoQk/CV-Rogelio-F-Link.pdf" target="_blank" rel="noopener">Open original CV (PDF)</a></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">Senior regional finance leader with FP&amp;A, controllership, ERP, multi-country reporting, revenue recognition, and treasury experience.</p><div class="cv-sub">Experience</div><div class="cv-line"><strong>MICRO1</strong> · Senior Finance Consultant · 2025–Present</div><div class="cv-line"><strong>Gunnebo</strong> · Finance Director · 2024</div><div class="cv-line"><strong>RMS Security</strong> · Director of Finance &amp; Administration · 2021–2024</div><div class="cv-line"><strong>Micro Focus</strong> · Regional Controller, LATAM North · 2014–2021</div><div class="cv-line"><strong>SAS Institute</strong> · Finance Director · 2008–2014</div><div class="cv-line"><strong>AMD</strong> · Regional Finance Manager · 2005–2007</div><div class="cv-line"><strong>EMC / Dell</strong> · Controller / Finance &amp; Administration Manager · 1996–2005</div><div class="cv-sub">Education</div><div class="cv-edu"><strong>MBA, Finance</strong> · Universidad Anáhuac</div><div class="cv-edu"><strong>Postgraduate Degree, Corporate Finance</strong> · Universidad Anáhuac</div><div class="cv-edu"><strong>Bachelor of Business Administration</strong> · Escuela Bancaria y Comercial</div><div class="cv-sub">Systems</div><div class="cv-tags"><span class="ctag">SAP</span><span class="ctag">Oracle</span><span class="ctag">Acumatica</span><span class="ctag">Intelisis</span><span class="ctag">Odoo</span><span class="ctag">Power BI</span><span class="ctag">Tableau</span></div></div></details>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="fade-in visible"><div class="comparison-section">
+        <div class="section-label" style="padding-bottom:20px;"><h2>Batch 2 comparison</h2><p>Interview-backed evidence and the main trade-offs.</p></div>
+        <div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Criteria</th><th>Danielle</th><th>Steven</th><th>Rogelio</th></tr></thead><tbody>
+          <tr><td><strong>Location</strong></td><td>Belize</td><td>Costa Rica</td><td>Mexico City</td></tr>
+          <tr><td><strong>Experience</strong></td><td>10+ yrs</td><td>15 yrs</td><td>20+ yrs</td></tr>
+          <tr><td><strong>Named companies</strong></td><td>Belize Sustainable Agriculture Ltd.; Pixels / Banger Inc.; W Group Companies</td><td>Boston Scientific; 3M; Citi</td><td>MICRO1; Gunnebo; RMS Security; Micro Focus; SAS Institute; AMD; EMC / Dell</td></tr>
+          <tr><td><strong>Systems proof</strong></td><td>Led QuickBooks Online → Dynamics 365</td><td>QBO, SAP, Oracle; migrated record-to-report processes</td><td>Implemented Intelisis; broad SAP, Oracle, and Odoo exposure</td></tr>
+          <tr><td><strong>Best fit</strong></td><td class="highlight-cell">Hands-on builder and system transition</td><td>US GAAP, close control, technical accounting</td><td>Senior regional leadership and infrastructure</td></tr>
+          <tr><td><strong>Main risk</strong></td><td>Recent role outside accounting; Belize payroll setup</td><td>No proven end-to-end ERP replacement</td><td>May be too senior for the daily scope</td></tr>
+          <tr><td><strong>Rate</strong></td><td>$4,000/mo</td><td>$4,000/mo</td><td>$5,000/mo</td></tr>
+        </tbody></table></div>
+      </div></div>
+    </div>
   </section>
 
   <div class="advisor-section fade-in">
@@ -885,7 +982,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       <span class="footer-x">×</span>
       <img src="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-2-e1759568299542.png" alt="Sagan">
     </div>
-    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Osmind Inc · Director of Accounting (Controller) Search · August 31, 2026</p>
+    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Osmind Inc · Director of Accounting (Controller) Search · Updated September 10, 2026</p>
   </footer>
 
   <script>
