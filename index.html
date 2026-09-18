@@ -284,6 +284,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
 </style>
 <style>
 .candidate-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}.candidate-media-grid .candidate-video{max-width:none;margin:0}.evidence-time{display:block;margin-bottom:8px;color:#14555a;font:600 10px var(--font-meta);letter-spacing:.08em;text-transform:uppercase}@media(max-width:760px){.candidate-media-grid{grid-template-columns:1fr}}
+.candidate-media-grid.single-media{grid-template-columns:minmax(0,1fr);max-width:760px}
 </style>
 </head>
 <body>
@@ -297,12 +298,12 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
           <div class="logo-sep" aria-hidden="true"></div>
           <img class="client-logo" src="osmind-logo.svg" alt="Osmind" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'"><span class="client-wordmark client-wordmark-fallback">Osmind</span>
         </div>
-        <span class="logo-sub">Batches 1–2 · Updated September 10, 2026</span>
+        <span class="logo-sub">Batches 1, 2 &amp; 4 · Updated September 18, 2026</span>
       </div>
       <div class="hero-eyebrow">Candidate shortlist</div>
       <h1><strong>Director of Accounting (Controller) candidates for Osmind Inc</strong></h1>
       <p class="hero-sub">Hey Shuchi and Megan, here's what I went looking for after our conversation: not resume Controllers, people who have built an accounting function with their own hands and still open the spreadsheets themselves
-. Nine made the cut across two batches, from Mexico, Belize, Costa Rica, and the Philippines. Each one brings direct experience with multi-entity close, US reporting, or finance-system transitions.</p>
+. Thirteen made the cut across three presentation drops, from Argentina, Mexico, Guatemala, Belize, Costa Rica, and the Philippines. Each one brings direct experience with multi-entity close, US reporting, or finance-system transitions.</p>
       <div class="hero-meta">
         <div class="hero-meta-item">
           <span class="hero-meta-label">Schedule</span>
@@ -318,7 +319,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         </div>
         <div class="hero-meta-item">
           <span class="hero-meta-label">Profiles</span>
-          <span class="hero-meta-value">09</span>
+          <span class="hero-meta-value">13</span>
         </div>
       </div>
     </div>
@@ -338,8 +339,8 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       <p>In presentation order. Open the available links to review each candidate.</p>
     </div>
 
-    <div class="batch-switcher" id="batch-switcher" data-count="2">
-      <button class="batch-btn active" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
+    <div class="batch-switcher" id="batch-switcher" data-count="3">
+      <button class="batch-btn" onclick="showBatch(1)" data-batch="1" data-batch-date="August 31, 2026">
         <span>Batch 1</span>
         <span class="batch-count">6</span>
         <span class="batch-date">August 31, 2026</span>
@@ -349,9 +350,14 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         <span class="batch-count">3</span>
         <span class="batch-date">September 10, 2026</span>
       </button>
+      <button class="batch-btn active" onclick="showBatch(4)" data-batch="4" data-batch-date="September 18, 2026">
+        <span>Batch 4</span>
+        <span class="batch-count">4</span>
+        <span class="batch-date">September 18, 2026</span>
+      </button>
     </div>
 
-    <div id="batch-1" class="batch-panel" data-batch-date="August 31, 2026">
+    <div id="batch-1" class="batch-panel hidden" data-batch-date="August 31, 2026">
       <div class="candidates">
         
     <div class="candidate-card fade-in visible">
@@ -940,6 +946,107 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
         </tbody></table></div>
       </div></div>
     </div>
+
+    <div id="batch-4" class="batch-panel" data-batch-date="September 18, 2026">
+      <div class="candidates">
+        <div class="candidate-card fade-in visible"><div class="card featured" id="candidate-batch4-anna">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar featured-avatar">10</div><div><div class="card-name">Anna Brik</div><div class="card-location">Argentina · 15 yrs Finance &amp; Accounting</div><div class="card-badges"><span class="badge badge-shortlisted">Screening completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$2,000–$2,500/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">15 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Argentina</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Anna is the clearest function builder in this batch. She is the Controller for a US marketing and advertising startup, reports to the founder acting as COO, and owns multi-entity accounting, budgeting, forecasting, cash flow, and bank-line coordination. She started as the sole accountant, repaired two years of QuickBooks Online history and broken system connections, then hired a bookkeeper and AR, billing, and AP support. Her close package is delivered within the first ten days of the month.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Fractional CFO</div><div class="exp-company">Know Yourself Academy</div><div class="exp-period">2025 – Present</div><ul class="exp-highlight-list"><li>Provides planning, analysis, reporting, and strategic finance support for a new business branch.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Finance Director</div><div class="exp-company">Strongpoint</div><div class="exp-period">2024 – 2025</div><ul class="exp-highlight-list"><li>Moved financial-statement delivery from day ten to day five and reduced outstanding receivables by 80%.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Finance Director / Head of Finance</div><div class="exp-company">Ready Set · Wisboo</div><div class="exp-period">2022 – 2024</div><ul class="exp-highlight-list"><li>Owned corporate accounting, reporting, controls, close, budgeting, and team development.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Accounting &amp; Finance LATAM Manager</div><div class="exp-company">Micro Focus</div><div class="exp-period">2016 – 2022</div><ul class="exp-highlight-list"><li>Led regional finance operations and launched the Brazil and Peru branches.</li></ul></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">Multi-Entity Accounting</span><span class="ctag ctag-key">Function Building</span><span class="ctag ctag-key">QuickBooks Online</span><span class="ctag ctag-key">Month-End Close</span><span class="ctag">Cash Flow</span><span class="ctag">Budgeting</span><span class="ctag">Team Building</span><span class="ctag">US Startup</span></div>
+            <div class="card-section-title">What came through in the screening</div><div class="fit-grid"><div class="fit-item"><span class="evidence-time">Current ownership</span><div class="fit-label">Owns multi-entity accounting, reporting, budgeting, forecasting, and cash-flow operations for a US startup.</div></div><div class="fit-item"><span class="evidence-time">Built from zero</span><div class="fit-label">Started as the only accountant, stabilized the books, then hired and structured four supporting finance roles.</div></div><div class="fit-item"><span class="evidence-time">Historical cleanup</span><div class="fit-label">Corrected two years of QuickBooks Online data and resolved synchronization problems across connected tools.</div></div><div class="fit-item"><span class="evidence-time">Reporting line</span><div class="fit-label">Reports directly to the founder acting as COO and gives leadership decision-ready financial information.</div></div></div>
+            <div class="candidate-media-grid single-media"><section class="candidate-video"><div class="candidate-video-label"><span>Screening with Anna</span><span>September 17, 2026</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1lcAEILOQ_JOGkGFMPuj33V7PMb62I6gB/preview" title="Anna Brik screening recording" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">Accountant and Executive MBA with 15 years across controllership, finance leadership, regional accounting, and team building.</p><div class="cv-sub">Experience</div><div class="cv-line"><strong>Know Yourself Academy</strong> · Fractional CFO · 2025–Present</div><div class="cv-line"><strong>Strongpoint</strong> · Finance Director · 2024–2025</div><div class="cv-line"><strong>Ready Set</strong> · Finance Director · 2023–2024</div><div class="cv-line"><strong>Wisboo</strong> · Head of Finance · 2022–2023</div><div class="cv-line"><strong>Micro Focus</strong> · Accounting &amp; Finance LATAM Manager · 2016–2022</div><div class="cv-line"><strong>ExxonMobil Argentina</strong> · Refinery Controller · 2010–2015</div><div class="cv-sub">Education</div><div class="cv-edu"><strong>Executive MBA, Summa Cum Laude</strong> · IAE Business School</div><div class="cv-edu"><strong>Finance Specialist</strong> · UCA</div><div class="cv-edu"><strong>Accountant</strong> · Universidad Nacional de Tucumán</div></div></details>
+          </div>
+        </div></div>
+
+        <div class="candidate-card fade-in visible"><div class="card" id="candidate-batch4-santiago">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar">11</div><div><div class="card-name">Santiago Pérez</div><div class="card-location">Mexico City · 8 yrs Finance &amp; Operations</div><div class="card-badges"><span class="badge badge-shortlisted">Screening completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$5,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">8 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico City</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Santiago brings the strongest combined accounting and finance-operations range in this batch. At Distillery Tech Inc., he directs finance operations across Mexico and the United States, reports to a US-based VP of Finance, and manages six people across billing, AR, collections, payroll, and accounting. He owns the GL, journal entries, reconciliations, month-end close, financial statements, budgets, and FP&amp;A. He also led a ten-year data migration from QuickBooks Online to NetSuite across internal and external implementation teams.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Finance &amp; Operations Manager</div><div class="exp-company">Distillery Tech Inc.</div><div class="exp-period">Current</div><ul class="exp-highlight-list"><li>Leads cross-border accounting, FP&amp;A, AR, payroll, pricing, and a six-person finance team.</li><li>Delivered more than $270K in documented savings through O2C redesign and ERP implementation.</li></ul></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">NetSuite Migration</span><span class="ctag ctag-key">End-to-End Close</span><span class="ctag ctag-key">Multi-Entity Operations</span><span class="ctag ctag-key">US GAAP</span><span class="ctag">QuickBooks Online</span><span class="ctag">SAP</span><span class="ctag">Workday</span><span class="ctag">FP&amp;A</span></div>
+            <div class="card-section-title">What came through in the screening</div><div class="fit-grid"><div class="fit-item"><span class="evidence-time">Cross-border scope</span><div class="fit-label">Directs Mexico and US finance operations and reports to a US-based VP of Finance.</div></div><div class="fit-item"><span class="evidence-time">ERP ownership</span><div class="fit-label">Coordinated NetSuite, QuickBooks Online, and internal teams through a five-month migration covering ten years of data.</div></div><div class="fit-item"><span class="evidence-time">Full-cycle control</span><div class="fit-label">Owns GL reconciliations, journal entries, auditable financial statements, close, budgets, and FP&amp;A.</div></div><div class="fit-item"><span class="evidence-time">Leadership</span><div class="fit-label">Manages six people, including finance analysts and accountants across both countries.</div></div></div>
+            <div class="candidate-media-grid">
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Santiago</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><video controls playsinline preload="metadata" controlslist="nodownload" src="https://candidate-video.com/uploads/495ab036-6eb5-4ed0-82d3-48ee1d38db1c">Your browser does not support inline video.</video></div></section>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Screening with Santiago</span><span>September 17, 2026</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1SsmjCBXKFno5RJ_mctMXNiJGrSZcLinh/preview" title="Santiago Pérez screening recording" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section>
+            </div>
+            <div class="card-actions"><a class="video-intro-btn" href="santiago-perez-cv.pdf" target="_blank" rel="noopener">Open original CV (PDF)</a></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">Finance and operations leader with eight years across US, European, and Latin American markets.</p><div class="cv-sub">Experience</div><div class="cv-line"><strong>Distillery Tech Inc.</strong> · Finance &amp; Operations Manager · 2024–Present</div><div class="cv-line"><strong>InductiveHealth Informatics</strong> · Finance &amp; Operations Leader · 2022–2024</div><div class="cv-line"><strong>Galprom Caribe S.L.</strong> · Finance Operations Analyst · 2019–2022</div><div class="cv-line"><strong>Reiss Ltd.</strong> · Finance &amp; Operations Associate · 2016–2019</div><div class="cv-sub">Systems and standards</div><div class="cv-tags"><span class="ctag">NetSuite</span><span class="ctag">QuickBooks Online</span><span class="ctag">SAP</span><span class="ctag">Workday</span><span class="ctag">US GAAP</span><span class="ctag">Mexican GAAP</span><span class="ctag">IFRS</span></div></div></details>
+          </div>
+        </div></div>
+
+        <div class="candidate-card fade-in visible"><div class="card" id="candidate-batch4-christian">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar">12</div><div><div class="card-name">Christian Silva Estrella</div><div class="card-location">Mexico City · 20+ yrs Finance Leadership</div><div class="card-badges"><span class="badge badge-shortlisted">Screening completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">To confirm</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">20+ yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico City</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Christian brings the strongest ERP and technical-accounting evidence in the group. In his current fractional CFO work for Mobik Retail, he manages five entities across the United States and Mexico, directs the complete accounting cycle, and closes by business day five. His background includes US GAAP, ASC 606, SOX audits, board reporting, budgeting, and forecasting. He has completed five finance-system implementations, including QuickBooks to NetSuite at American Home Protect, a Porch Inc. subsidiary, and Odoo to NetSuite at Mobik Retail. He wants a Controller role that keeps him close to the books.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Fractional CFO</div><div class="exp-company">Mobik Retail</div><div class="exp-period">2025 – Present</div><ul class="exp-highlight-list"><li>Turned the business profitable, implemented NetSuite, and consolidated five US and Mexico entities.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">CFO – Controller</div><div class="exp-company">American Home Protect · Porch Inc.</div><div class="exp-period">2023 – 2024</div><ul class="exp-highlight-list"><li>Led revenue recognition under ASC 606 and ASC 460, the NetSuite migration, and a clean EY SOX audit.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Prior CFO / Finance Director roles</div><div class="exp-company">Banco Azteca · Frontier Car Group · Grupo Autofin · CGG · Kinross Gold · PGS</div><div class="exp-period">2002 – 2022</div><ul class="exp-highlight-list"><li>Led M&amp;A, multi-country finance, project financing, public-company reporting, and consolidation of up to 130 companies.</li></ul></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">NetSuite Implementation</span><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">ASC 606</span><span class="ctag ctag-key">Five-Entity Close</span><span class="ctag">SOX</span><span class="ctag">QuickBooks</span><span class="ctag">Odoo</span><span class="ctag">Board Reporting</span></div>
+            <div class="card-section-title">What came through in the screening</div><div class="fit-grid"><div class="fit-item"><span class="evidence-time">Close ownership</span><div class="fit-label">Directs the complete accounting cycle across five entities and closes by business day five.</div></div><div class="fit-item"><span class="evidence-time">Migration record</span><div class="fit-label">Has completed five system implementations, including QuickBooks-to-NetSuite and Odoo-to-NetSuite projects.</div></div><div class="fit-item"><span class="evidence-time">Technical depth</span><div class="fit-label">Has operated under US GAAP, applied ASC 606, and supported SOX audit requirements.</div></div><div class="fit-item"><span class="evidence-time">Role intent</span><div class="fit-label">Is specifically seeking a Controller role where he remains hands-on with accounting operations.</div></div></div>
+            <div class="candidate-media-grid single-media"><section class="candidate-video"><div class="candidate-video-label"><span>Screening with Christian</span><span>September 18, 2026</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1ZUEdCw4iz4qI65QGTkqINe7wPUx-w8eh/preview" title="Christian Silva Estrella screening recording" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section></div>
+            <div class="card-actions"><a class="video-intro-btn" href="christian-silva-cv.pdf" target="_blank" rel="noopener">Open original CV (PDF)</a></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">CFO and Finance Director with 20+ years across startups and large multinationals, five M&amp;A transactions totaling more than $1.6B, and deep US GAAP, SOX, consolidation, and ERP experience.</p><div class="cv-sub">Experience</div><div class="cv-line"><strong>Mobik Retail</strong> · Fractional CFO · 2025–Present</div><div class="cv-line"><strong>American Home Protect · Porch Inc.</strong> · CFO – Controller · 2023–2024</div><div class="cv-line"><strong>Banco Azteca · Grupo Salinas</strong> · Finance &amp; Administrative Director · 2021–2022</div><div class="cv-line"><strong>Frontier Car Group · VendeTuAuto.com</strong> · CFO · 2018–2020</div><div class="cv-line"><strong>Grupo Autofin</strong> · Group CFO, Automotive Division · 2014–2017</div><div class="cv-line"><strong>CGG</strong> · Finance Director Mexico · 2012–2014</div><div class="cv-line"><strong>Kinross Gold Corporation</strong> · CFO, Project Finance · 2010–2012</div><div class="cv-line"><strong>Petroleum Geo-Services</strong> · LATAM Regional Finance Officer · 2002–2010</div><div class="cv-line"><strong>Deloitte</strong> · Senior External Auditor · 1996–1999</div><div class="cv-sub">Systems and standards</div><div class="cv-tags"><span class="ctag">NetSuite</span><span class="ctag">SAP S/4HANA</span><span class="ctag">Oracle</span><span class="ctag">Hyperion</span><span class="ctag">US GAAP</span><span class="ctag">ASC 606</span><span class="ctag">ASC 460</span><span class="ctag">SOX</span></div></div></details>
+          </div>
+        </div></div>
+
+        <div class="candidate-card fade-in visible"><div class="card" id="candidate-batch4-lucia">
+          <div class="card-top">
+            <div class="card-identity"><div class="card-avatar">13</div><div><div class="card-name">Lucia Muralles Alvarez</div><div class="card-location">Guatemala · 19 yrs Accounting &amp; Finance</div><div class="card-badges"><span class="badge badge-shortlisted">Screening completed</span></div></div></div>
+            <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$4,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">19 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Guatemala</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
+          </div>
+          <div class="card-body">
+            <div class="card-narrative">Lucia offers the strongest healthcare and scaled-services background in this batch. As Director of Finance and Accounting at Secure Box, she established US GAAP standards, led a 30-person team serving about 250 clients, and helped develop an AI platform that connects with QuickBooks for CFO insight and compliance review. Her 12 years at Conduent included seven years building financial models for US healthcare government contracts, negotiating work totaling $500M, and managing month-end close as a healthcare Controller. She wants another build-from-zero controllership mandate.</div>
+            <div class="card-section-title">Experience highlights</div><div class="experience-list">
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Director of Finance &amp; Accounting</div><div class="exp-company">Secure Box</div><div class="exp-period">Recent</div><ul class="exp-highlight-list"><li>Built US GAAP standards, led 30 staff, and supported approximately 250 clients.</li><li>Helped develop an AI platform connected to QuickBooks for CFO insights and compliance review.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Healthcare Controller / Pricing Consultant</div><div class="exp-company">Conduent</div><div class="exp-period">12 yrs</div><ul class="exp-highlight-list"><li>Built healthcare-government financial models, managed close, and negotiated contracts totaling $500M.</li></ul></div></div>
+              <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Accounting Operations</div><div class="exp-company">PMF · Walmart</div><div class="exp-period">Earlier</div><ul class="exp-highlight-list"><li>Managed payroll, AR, AP, and bookkeeping cycles.</li></ul></div></div>
+            </div>
+            <div class="card-section-title">Core strengths</div><div class="tags-cluster"><span class="ctag ctag-key">Healthcare Finance</span><span class="ctag ctag-key">US GAAP</span><span class="ctag ctag-key">Month-End Close</span><span class="ctag ctag-key">Function Building</span><span class="ctag">QuickBooks</span><span class="ctag">SAP</span><span class="ctag">Oracle</span><span class="ctag">Financial Modeling</span></div>
+            <div class="card-section-title">What came through in the screening</div><div class="fit-grid"><div class="fit-item"><span class="evidence-time">Healthcare depth</span><div class="fit-label">Spent seven years modeling US healthcare government contracts and later managed close as a healthcare Controller.</div></div><div class="fit-item"><span class="evidence-time">Scaled leadership</span><div class="fit-label">Led 30 people supporting roughly 250 clients while establishing US GAAP operating standards.</div></div><div class="fit-item"><span class="evidence-time">Technology orientation</span><div class="fit-label">Helped develop an AI platform connected to QuickBooks for financial insight and compliance review.</div></div><div class="fit-item"><span class="evidence-time">Builder motivation</span><div class="fit-label">Wants a Director-level controllership role focused on creating the finance operation from the ground up.</div></div></div>
+            <div class="candidate-media-grid">
+              <section class="candidate-video"><div class="candidate-video-label"><span>Meet Lucia</span><span>Candidate introduction</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1aS17mRx2kmMEpHZIjLT9sb-C5PHQfi1h/preview" title="Lucia Muralles Alvarez candidate introduction" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section>
+              <section class="candidate-video"><div class="candidate-video-label"><span>Screening with Lucia</span><span>September 18, 2026</span></div><div class="candidate-video-frame"><iframe src="https://drive.google.com/file/d/1FeGcGomdWUjMhdFrOUyEIzyEio5gnMGe/preview" title="Lucia Muralles Alvarez screening recording" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></section>
+            </div>
+            <div class="card-actions"><a class="video-intro-btn" href="https://docs.google.com/document/d/1j-ow0sNLcPAHgcwavTdHLJUqoTaplHnKOyFHy35kMv4/edit?usp=drive_link" target="_blank" rel="noopener">Open original CV</a></div>
+            <details class="cv resume-details"><summary>View résumé</summary><div class="cv-body"><p class="cv-summary">Finance leader with 19 years across controllership, healthcare pricing, US GAAP, financial modeling, and scaled accounting operations.</p><div class="cv-sub">Selected experience</div><div class="cv-line"><strong>Secure Box</strong> · Director of Finance &amp; Accounting · US GAAP standards and 30-person team</div><div class="cv-line"><strong>Conduent</strong> · Healthcare Controller / Pricing Consultant · 12 years</div><div class="cv-line"><strong>PMF</strong> · Payroll, AR, and AP leadership</div><div class="cv-line"><strong>Walmart</strong> · Bookkeeping and accounting cycles</div><div class="cv-sub">Systems</div><div class="cv-tags"><span class="ctag">QuickBooks</span><span class="ctag">SAP</span><span class="ctag">Oracle</span><span class="ctag">JD Edwards</span><span class="ctag">Microsoft 365</span></div></div></details>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="fade-in visible"><div class="comparison-section">
+        <div class="section-label" style="padding-bottom:20px;"><h2>Batch 4 comparison</h2><p>Screening-backed evidence and the main trade-offs.</p></div>
+        <div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Criteria</th><th>Anna</th><th>Santiago</th><th>Christian</th><th>Lucia</th></tr></thead><tbody>
+          <tr><td><strong>Location</strong></td><td>Argentina</td><td>Mexico City</td><td>Mexico City</td><td>Guatemala</td></tr>
+          <tr><td><strong>Experience</strong></td><td>15 yrs</td><td>8 yrs</td><td>20+ yrs</td><td>19 yrs</td></tr>
+          <tr><td><strong>Named companies</strong></td><td>Strongpoint; Ready Set; Wisboo; Micro Focus; ExxonMobil</td><td>Distillery Tech; InductiveHealth; Galprom Caribe; Reiss</td><td>Mobik Retail; Porch; Banco Azteca; Frontier Car Group; Grupo Autofin; CGG; Kinross; PGS; Deloitte</td><td>Secure Box; Conduent; PMF; Walmart</td></tr>
+          <tr><td><strong>Screening proof</strong></td><td>Built a department from zero; repaired two years of QBO history; owns multi-entity close</td><td>Led ten-year QBO-to-NetSuite migration; manages six; owns full close</td><td>Five entities; day-five close; five system implementations; ASC 606 and SOX</td><td>Healthcare Controller; 30-person team; 250 clients; $500M contract work</td></tr>
+          <tr><td><strong>Best fit</strong></td><td>Hands-on builder at the target compensation</td><td>Cross-border operator and ERP migration lead</td><td class="highlight-cell">Technical accounting and repeated ERP implementation</td><td>Healthcare context, scale, and function building</td></tr>
+          <tr><td><strong>Main risk</strong></td><td>Open to offers, but not actively searching</td><td>Higher compensation and less tenure than the other finalists</td><td>Compensation still needs confirmation; may be too senior for the daily scope</td><td>Confirm how much recent close work she performs personally</td></tr>
+          <tr><td><strong>Rate</strong></td><td>$2,000–$2,500/mo</td><td>$5,000/mo</td><td>To confirm</td><td>$4,000/mo</td></tr>
+        </tbody></table></div>
+      </div></div>
+    </div>
   </section>
 
   <div class="advisor-section fade-in">
@@ -984,7 +1091,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       <span class="footer-x">×</span>
       <img src="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-2-e1759568299542.png" alt="Sagan">
     </div>
-    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Osmind Inc · Director of Accounting (Controller) Search · Updated September 10, 2026</p>
+    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Osmind Inc · Director of Accounting (Controller) Search · Updated September 18, 2026</p>
   </footer>
 
   <script>
