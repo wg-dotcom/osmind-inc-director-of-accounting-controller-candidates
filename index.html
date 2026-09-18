@@ -326,7 +326,10 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
 #batch-3 .resume-side-line strong{display:block;color:var(--ink)}
 #batch-3 .resume-skill-list{display:flex;flex-wrap:wrap;gap:7px}
 #batch-3 .resume-skill-list span{padding:6px 9px;background:var(--cream);border:1px solid var(--line);border-radius:999px;color:var(--ink);font-size:11px}
+.advisor-card{grid-template-columns:128px minmax(0,1fr)}
+.advisor-avatar{width:128px;height:160px;border-radius:18px;object-position:center center}
 @media(max-width:760px){#batch-3 .batch-recommendation{display:block}#batch-3 .batch-recommendation p{margin-top:14px}#batch-3 .resume-cover,#batch-3 .resume-layout{grid-template-columns:1fr}#batch-3 .resume-cover{padding:24px}#batch-3 .resume-content{padding:24px}#batch-3 .resume-role-head{display:block}#batch-3 .resume-role-head span{display:block;margin-top:3px}}
+@media(max-width:560px){.advisor-card{grid-template-columns:1fr}.advisor-avatar{width:min(100%,240px);height:auto;aspect-ratio:3/4;margin:auto}}
 </style>
 </head>
 <body>
@@ -1090,7 +1093,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
   <div class="advisor-section fade-in">
     <div class="advisor-section-label">Your Talent Advisor</div>
     <div class="advisor-card">
-      <img class="advisor-avatar" src="https://saganrecruitment.com/wp-content/uploads/2025/10/Jesus-Pacheco.jpeg" alt="Jesus Pacheco">
+      <img class="advisor-avatar" src="jesus-kilimanjaro.jpeg" alt="Jesus Pacheco at the summit of Kilimanjaro">
       <div class="advisor-info">
         <div class="advisor-label">Sagan Talent Advisor</div>
         <div class="advisor-name">Jesus Pacheco</div>
