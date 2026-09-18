@@ -286,6 +286,15 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
 .candidate-media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:30px}.candidate-media-grid .candidate-video{max-width:none;margin:0}.evidence-time{display:block;margin-bottom:8px;color:#14555a;font:600 10px var(--font-meta);letter-spacing:.08em;text-transform:uppercase}@media(max-width:760px){.candidate-media-grid{grid-template-columns:1fr}}
 .candidate-media-grid.single-media{grid-template-columns:minmax(0,1fr);max-width:760px}
 </style>
+<style>
+.batch-recommendation{display:flex;align-items:end;justify-content:space-between;gap:32px;margin:4px 0 28px;padding:26px 0 30px;border-bottom:1px solid var(--line)}
+.batch-recommendation .eyebrow{margin:0 0 8px;color:#14555A;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.batch-recommendation h3{margin:0;color:var(--ink);font:800 clamp(30px,4vw,46px)/1.08 var(--font-heading);letter-spacing:-.04em}
+.batch-recommendation p{max-width:390px;margin:0;color:var(--muted);font-size:17px}
+.card-narrative h3{margin:0 0 10px;color:var(--ink);font:700 clamp(23px,3vw,32px)/1.2 var(--font-heading);letter-spacing:-.025em}
+.card-narrative p{margin:0}
+@media(max-width:760px){.batch-recommendation{display:block}.batch-recommendation p{margin-top:14px}}
+</style>
 </head>
 <body>
 
@@ -947,6 +956,10 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
     </div>
 
     <div id="batch-3" class="batch-panel" data-batch-date="September 18, 2026">
+      <div class="batch-recommendation">
+        <div><p class="eyebrow">My recommendation</p><h3>Who I would meet</h3></div>
+        <p>I would interview all four. For different reasons.</p>
+      </div>
       <div class="candidates">
         <div class="candidate-card fade-in visible"><div class="card featured" id="candidate-batch3-anna">
           <div class="card-top">
@@ -954,7 +967,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
             <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$2,000–$2,500/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">15 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Argentina</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
           </div>
           <div class="card-body">
-            <div class="card-narrative"><strong>Why I would interview Anna:</strong> She has already done the zero-to-one work this role needs. She joined a US startup as its only accountant, fixed two years of bad QuickBooks history, and built the support team around herself. She now owns the multi-entity close and reports directly to the founder. She did not inherit a clean function. She built one.</div>
+            <div class="card-narrative"><h3>Anna is the clearest zero-to-one builder.</h3><p>She joined a US startup as its only accountant, fixed two years of bad QuickBooks history, and built the support team around herself. She now owns the multi-entity close and reports directly to the founder. She did not inherit a clean function. She built one.</p></div>
             <div class="card-section-title">Experience highlights</div><div class="experience-list">
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Fractional CFO</div><div class="exp-company">Know Yourself Academy</div><div class="exp-period">2025 – Present</div><ul class="exp-highlight-list"><li>Provides planning, analysis, reporting, and strategic finance support for a new business branch.</li></ul></div></div>
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Finance Director</div><div class="exp-company">Strongpoint</div><div class="exp-period">2024 – 2025</div><ul class="exp-highlight-list"><li>Moved financial-statement delivery from day ten to day five and reduced outstanding receivables by 80%.</li></ul></div></div>
@@ -974,7 +987,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
             <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$5,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">8 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico City</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
           </div>
           <div class="card-body">
-            <div class="card-narrative"><strong>Why I would interview Santiago:</strong> He combines hands-on close ownership with the exact ERP transition on the roadmap. He leads finance across Mexico and the US, owns the GL through the financial statements, and manages six people. He also led a ten-year QuickBooks-to-NetSuite migration. He could explain both the accounting work and the system work without hiding behind his team.</div>
+            <div class="card-narrative"><h3>Santiago is the strongest systems operator.</h3><p>He leads finance across Mexico and the US, owns the GL through the financial statements, and manages six people. He also led a ten-year QuickBooks-to-NetSuite migration. He could explain both the accounting work and the system work without hiding behind his team.</p></div>
             <div class="card-section-title">Experience highlights</div><div class="experience-list">
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div></div><div class="exp-content"><div class="exp-role">Finance &amp; Operations Manager</div><div class="exp-company">Distillery Tech Inc.</div><div class="exp-period">Current</div><ul class="exp-highlight-list"><li>Leads cross-border accounting, FP&amp;A, AR, payroll, pricing, and a six-person finance team.</li><li>Delivered more than $270K in documented savings through O2C redesign and ERP implementation.</li></ul></div></div>
             </div>
@@ -995,7 +1008,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
             <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">To confirm</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">20+ yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Mexico City</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
           </div>
           <div class="card-body">
-            <div class="card-narrative"><strong>Why I would interview Christian:</strong> Few candidates have shown this much proof across every hard part of the role. He runs a five-entity close by business day five, knows ASC 606 and SOX, and has completed five finance-system implementations. He has already moved companies from QuickBooks and Odoo into NetSuite. The experience is deep, current, and directly relevant.</div>
+            <div class="card-narrative"><h3>Christian has the deepest technical accounting experience.</h3><p>He runs a five-entity close by business day five, knows ASC 606 and SOX, and has completed five finance-system implementations. He has already moved companies from QuickBooks and Odoo into NetSuite. The experience is deep, current, and directly relevant.</p></div>
             <div class="card-section-title">Experience highlights</div><div class="experience-list">
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Fractional CFO</div><div class="exp-company">Mobik Retail</div><div class="exp-period">2025 – Present</div><ul class="exp-highlight-list"><li>Turned the business profitable, implemented NetSuite, and consolidated five US and Mexico entities.</li></ul></div></div>
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">CFO – Controller</div><div class="exp-company">American Home Protect · Porch Inc.</div><div class="exp-period">2023 – 2024</div><ul class="exp-highlight-list"><li>Led revenue recognition under ASC 606 and ASC 460, the NetSuite migration, and a clean EY SOX audit.</li></ul></div></div>
@@ -1015,7 +1028,7 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
             <div class="score-box"><div class="score-cell"><span class="score-label">Salary</span><span class="score-value">$4,000/mo</span></div><div class="score-cell"><span class="score-label">Experience</span><span class="score-value">19 yrs</span></div><div class="score-cell"><span class="score-label">Location</span><span class="score-value">Guatemala</span></div><div class="score-cell"><span class="score-label">Schedule</span><span class="score-value">Full-time · US hours</span></div></div>
           </div>
           <div class="card-body">
-            <div class="card-narrative"><strong>Why I would interview Lucia:</strong> She brings the strongest healthcare match in the group, plus real controllership depth. She has worked under US GAAP, managed the close, led 30 people, and handled major US healthcare contracts. She has worked at scale, but she still wants a build-from-zero mandate. Her background connects the industry, the accounting work, and the leadership scope.</div>
+            <div class="card-narrative"><h3>Lucia is the strongest healthcare match.</h3><p>She has worked under US GAAP, managed the close, led 30 people, and handled major US healthcare contracts. She has worked at scale, but she still wants a build-from-zero mandate. Her background connects the industry, the accounting work, and the leadership scope.</p></div>
             <div class="card-section-title">Experience highlights</div><div class="experience-list">
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Director of Finance &amp; Accounting</div><div class="exp-company">Secure Box</div><div class="exp-period">Recent</div><ul class="exp-highlight-list"><li>Built US GAAP standards, led 30 staff, and supported approximately 250 clients.</li><li>Helped develop an AI platform connected to QuickBooks for CFO insights and compliance review.</li></ul></div></div>
               <div class="exp-item"><div class="exp-dot-col"><div class="exp-dot"></div><div class="exp-line"></div></div><div class="exp-content"><div class="exp-role">Healthcare Controller / Pricing Consultant</div><div class="exp-company">Conduent</div><div class="exp-period">12 yrs</div><ul class="exp-highlight-list"><li>Built healthcare-government financial models, managed close, and negotiated contracts totaling $500M.</li></ul></div></div>
@@ -1034,15 +1047,12 @@ body{background:var(--bg-page);color:var(--text-primary);font-family:var(--font-
       </div>
 
       <div class="fade-in visible"><div class="comparison-section">
-        <div class="section-label" style="padding-bottom:20px;"><h2>Batch 3 comparison</h2><p>What convinced me, what still needs testing, and where each person fits best.</p></div>
-        <div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Criteria</th><th>Anna</th><th>Santiago</th><th>Christian</th><th>Lucia</th></tr></thead><tbody>
-          <tr><td><strong>Location</strong></td><td>Argentina</td><td>Mexico City</td><td>Mexico City</td><td>Guatemala</td></tr>
-          <tr><td><strong>Experience</strong></td><td>15 yrs</td><td>8 yrs</td><td>20+ yrs</td><td>19 yrs</td></tr>
-          <tr><td><strong>Named companies</strong></td><td>Strongpoint; Ready Set; Wisboo; Micro Focus; ExxonMobil</td><td>Distillery Tech; InductiveHealth; Galprom Caribe; Reiss</td><td>Mobik Retail; Porch; Banco Azteca; Frontier Car Group; Grupo Autofin; CGG; Kinross; PGS; Deloitte</td><td>Secure Box; Conduent; PMF; Walmart</td></tr>
-          <tr><td><strong>Screening proof</strong></td><td>Built a department from zero; repaired two years of QBO history; owns multi-entity close</td><td>Led ten-year QBO-to-NetSuite migration; manages six; owns full close</td><td>Five entities; day-five close; five system implementations; ASC 606 and SOX</td><td>Healthcare Controller; 30-person team; 250 clients; $500M contract work</td></tr>
-          <tr><td><strong>Best fit</strong></td><td>Hands-on builder at the target compensation</td><td>Cross-border operator and ERP migration lead</td><td class="highlight-cell">Technical accounting and repeated ERP implementation</td><td>Healthcare context, scale, and function building</td></tr>
-          <tr><td><strong>Main risk</strong></td><td>Open to offers, but not actively searching</td><td>Higher compensation and less tenure than the other finalists</td><td>Compensation still needs confirmation; may be too senior for the daily scope</td><td>Confirm how much recent close work she performs personally</td></tr>
-          <tr><td><strong>Rate</strong></td><td>$2,000–$2,500/mo</td><td>$5,000/mo</td><td>To confirm</td><td>$4,000/mo</td></tr>
+        <div class="section-label" style="padding-bottom:20px;"><h2>Why I would meet all four</h2><p>Each person solves a different part of the same problem.</p></div>
+        <div class="comparison-table-wrap"><table class="comparison-table"><thead><tr><th>Candidate</th><th>Why meet them</th><th>Best interview evidence</th><th>What I would test next</th><th>Monthly expectation</th></tr></thead><tbody>
+          <tr><td><strong>Anna</strong></td><td>She has already built an accounting function from zero and still owns the work.</td><td>Repaired two years of QuickBooks history, then hired and structured the support team.</td><td>What would make her leave a role when she is not actively searching.</td><td>$2,000–$2,500</td></tr>
+          <tr><td><strong>Santiago</strong></td><td>He combines full-close ownership with the exact ERP transition on the roadmap.</td><td>Led a ten-year QuickBooks-to-NetSuite migration while running cross-border finance.</td><td>Whether he wants the daily hands-on work at the top of the budget.</td><td>$5,000</td></tr>
+          <tr><td><strong>Christian</strong></td><td>He has repeated proof across multi-entity close, technical accounting, controls, and ERP work.</td><td>Runs five entities to a day-five close and has completed five system implementations.</td><td>Level fit, compensation, and how close he wants to stay to the books.</td><td>To confirm</td></tr>
+          <tr><td><strong>Lucia</strong></td><td>She connects healthcare experience with real controllership and function-building depth.</td><td>Managed healthcare close, led 30 people, and worked on US contracts totaling $500M.</td><td>How much of the recent close she still performs herself.</td><td>$4,000</td></tr>
         </tbody></table></div>
       </div></div>
     </div>
